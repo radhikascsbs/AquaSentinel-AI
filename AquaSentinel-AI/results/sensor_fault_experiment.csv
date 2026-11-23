@@ -1,0 +1,2 @@
+target_sensor,diagnosis,is_sensor_fault,confidence,auto_action_approved,decision,policy_reason
+J_B2,SENSOR_FAULT,True,0.99,False,NO_ACT_MANUAL_INSPECTION,AI classification confidence (50.0%) is below the automated action threshold (90.0%). Automated valve intervention inhibited to prevent unintended supply interruption. RECOMMENDATION: Dispatch field crew for manual acoustic & visual pipe inspection.

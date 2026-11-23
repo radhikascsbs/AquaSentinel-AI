@@ -1,0 +1,51 @@
+{
+  "tests": {
+    "test_1_normal_run": {
+      "status": "PASSED",
+      "is_anomaly": false,
+      "anomaly_score": 0.08430883807955225,
+      "predicted_label": "Normal",
+      "confidence": 1.0,
+      "leak_discharge_lps": 0.0
+    },
+    "test_2_zone_b_leak": {
+      "status": "PASSED",
+      "target_pipe": "P_B1",
+      "leak_flow_actual_lps": 76.73,
+      "is_anomaly": true,
+      "anomaly_score": 0.1846,
+      "predicted_label": "Leak",
+      "confidence": 1.0,
+      "top_ranked_pipe": "P_B1",
+      "top_rank_score": 100.0
+    },
+    "test_3_valve_action_recovery": {
+      "status": "PASSED",
+      "applied_action": "Isolate Pipe Segment 'P_B1'",
+      "isolated_links": [
+        "P_B1",
+        "P_B1_seg2"
+      ],
+      "water_loss_before_lps": 77.58,
+      "water_loss_after_lps": 0.0,
+      "loss_reduction_pct": 100.0,
+      "customer_service_pct_after": 109.9,
+      "recovery_status": "RECOVERY_VERIFIED_SUCCESSFUL"
+    },
+    "test_4_faulty_sensor": {
+      "status": "PASSED",
+      "target_sensor": "J_B2",
+      "diagnosis": "SENSOR_FAULT",
+      "is_sensor_fault": true,
+      "auto_action_approved": false,
+      "decision": "NO_ACT_MANUAL_INSPECTION"
+    },
+    "test_5_app_integrity": {
+      "status": "PASSED",
+      "all_imports_verified": true,
+      "plotly_rendering_verified": true,
+      "streamlit_entrypoint_verified": true
+    }
+  },
+  "overall_status": "ALL_TESTS_PASSED"
+}

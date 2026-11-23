@@ -1,0 +1,4 @@
+pipe_name,start_node,end_node,zone,avg_pressure_drop_m,max_endpoint_drop_m,flow_change,hops_to_epicenter,suspect_score,rank
+P_B1,J_B1,J_B2,Zone_B,11.21,11.27,0.07,0,100.0,1
+P_A4,J_A5,J_A2,Zone_A,9.09,10.65,0.048,2,71.3,2
+P_B2,J_B2,J_B3,Zone_B,11.03,11.14,0.003,1,67.1,3

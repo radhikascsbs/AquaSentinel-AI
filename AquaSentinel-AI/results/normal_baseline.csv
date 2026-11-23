@@ -1,0 +1,2 @@
+test,is_anomaly,anomaly_score,predicted_label,confidence,total_leak_lps,mean_pressure_m,delivered_demand_lps
+Normal Run,False,0.0843,Normal,1.0,0.0,98.09,68.7
